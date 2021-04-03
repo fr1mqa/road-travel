@@ -1,0 +1,30 @@
+.control-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  font-size: 13px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.control-button__text {
+  display: none;
+}
+
+@media screen and (min-width: 768px){
+  .control-button__icon {
+    display: none;
+  }
+
+  .control-button__text {
+    display: block;
+  }
+
+  .control-button {
+    width: 100px;
+  }
+}

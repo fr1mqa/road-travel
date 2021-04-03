@@ -1,0 +1,24 @@
+<section class="event-card" [ngSwitch]="eventCard.type">
+  <ng-template [ngIf]="!edit">
+    <div class="event-card__wrapper">
+      <img src="./assets/img/{{eventCard.type}}.png" [alt]="eventCard.type" class="event-card__image">
+    </div>
+    <div class="event-card__info">
+      <p class="event-card__title">{{eventCard.title}}</p>
+      <div class="event-card__description">
+        <vehicle [eventCard]="eventCard" *ngSwitchCase="'vehicle'"></vehicle>
+        <place [eventCard]="eventCard" *ngSwitchCase="'place'"></place>
+        <hotel [eventCard]="eventCard" *ngSwitchCase="'hotel'"></hotel>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template [ngIf]="edit">
+    <event-settings></event-settings>
+  </ng-template>
+  <div class="event-card__control">
+    <control-button *ngIf="!edit" [config]="changeButton" (click)="toggleEdit()"></control-button>
+    <control-button *ngIf="!edit" [config]="deleteButton" (click)="deleteEvent.emit(eventCard.type)"></control-button>
+    <control-button *ngIf="edit" [config]="saveButton" (click)="saveChanges()"></control-button>
+    <control-button *ngIf="edit" [config]="cancelButton" (click)="cancelEdit()"></control-button>
+  </div>
+</section>

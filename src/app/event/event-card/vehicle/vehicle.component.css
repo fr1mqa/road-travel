@@ -1,0 +1,21 @@
+.vehicle {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--text-color);
+}
+
+.vehicle__type,
+.vehicle__passengers,
+.vehicle__gearbox,
+.vehicle__ac {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.vehicle img {
+  margin-right: 5px;
+}

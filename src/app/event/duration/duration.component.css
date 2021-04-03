@@ -1,0 +1,21 @@
+.duration {
+  width: 75px;
+  height: 50px;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white-bg-color);
+}
+
+.duration__text {
+  font-size: 13px;
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .duration {
+    flex-direction: column;
+    width: 60px;
+  }
+}

@@ -1,0 +1,5 @@
+<menu class="dropdown-menu" [ngClass]="{'open': toggle}">
+  <ng-container *ngFor="let item of items; let i = index">
+    <menu-button [config]="item" (click)="selectEvent.emit(item)"></menu-button>
+  </ng-container>
+</menu>

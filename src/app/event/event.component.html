@@ -1,0 +1,22 @@
+<section class="event">
+  <div class="event__wrapper">
+    <ng-container *ngFor="let item of exampleData$ | async as exampleData; let last = last">
+      <div class="event__add-wrapper">
+        <duration></duration>
+        <add-event (addEvent)="addEventHandler($event)"></add-event>
+      </div>
+      <div class="event__card-wrapper">
+        <parameters></parameters>
+        <event-card [eventCard]="item" (deleteEvent)="deleteEventHandler($event)"
+                    (saveEvent)="saveEventHandler($event)"></event-card>
+      </div>
+      <ng-template [ngIf]="last">
+        <div class="event__add-wrapper">
+          <duration></duration>
+          <add-event (addEvent)="addEventHandler($event)"></add-event>
+        </div>
+      </ng-template>
+    </ng-container>
+    <span class="event__cross-line"></span>
+  </div>
+</section>

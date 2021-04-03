@@ -1,0 +1,11 @@
+<section class="hotel">
+  <span class="hotel__rating">{{eventCard.hotel.rating}}</span>
+  <div class="hotel__category">
+    <img src="./assets/img/hotel-icon.svg" alt="hotel">
+    <span class="hotel__category-text">{{eventCard.hotel.category}}</span>
+  </div>
+  <div class="hotel__start-rating">
+    <img src="./assets/img/star.svg" alt="star-rating" *repeatTimes="eventCard.hotel.starRating">
+  </div>
+</section>
+

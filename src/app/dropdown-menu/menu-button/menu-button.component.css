@@ -1,0 +1,53 @@
+.menu-button {
+  padding: 10px 20px 10px 15px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: var(--white-bg-color);
+  border: 1px dashed #DFE2E5;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.menu-button:focus {
+  outline-color: var(--outline-menu-button-color);
+}
+
+.menu-button:hover {
+  background-color: var(--hover-menu-button-bg);
+}
+
+.menu-button__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-button__icon {
+  height: auto;
+  width: 100%;
+}
+
+.menu-button__text {
+  padding: 0 15px;
+  flex-grow: 1;
+  font-size: 14px;
+  text-align: left;
+  color: var(--main-text-color);
+}
+
+.menu-button__open-icon {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-bottom: 2px solid var(--menu-icon-border-color);
+  border-left: 2px solid var(--menu-icon-border-color);
+  transform: rotate(-45deg);
+}
+
+.menu-button.open .menu-button__open-icon {
+  border-color: var(--menu-open-icon-border-color);
+  transform: rotate(135deg);
+}

@@ -1,0 +1,7 @@
+<button class="menu-button">
+  <div class="menu-button__wrapper">
+    <img [src]="config.icon" alt="icon" class="menu-button__icon">
+  </div>
+  <span class="menu-button__text">{{config.text}}</span>
+  <span *ngIf="config.openIcon" class="menu-button__open-icon"></span>
+</button>

@@ -1,0 +1,12 @@
+<section class="time-control">
+  <span class="time-control__decrease" (click)="decreaseTime()"></span>
+  <span class="time-control__value" [ngSwitch]="mode">
+    <ng-template ngSwitchCase="time">
+      {{value}}:00
+    </ng-template>
+    <ng-template ngSwitchCase="duration">
+      {{value}} m
+    </ng-template>
+  </span>
+  <span class="time-control__increase" (click)="increaseTime()"></span>
+</section>

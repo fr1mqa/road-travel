@@ -1,0 +1,19 @@
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.dropdown-menu.open {
+  display: block;
+}
+
+.dropdown-menu.open .menu-button {
+  border-style: solid;
+  border-radius: unset;
+}

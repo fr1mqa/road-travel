@@ -1,0 +1,9 @@
+.event-settings {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.event-settings__wrapper {
+  margin-right: 25px;
+}

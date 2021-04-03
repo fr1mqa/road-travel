@@ -1,0 +1,40 @@
+.hotel {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--text-color)
+}
+
+.hotel__rating,
+.hotel__category,
+.hotel__start-rating {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.hotel__category img {
+  margin-right: 5px;
+}
+
+.hotel__category-text {
+  display: none;
+}
+
+.hotel__rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-text-color);
+  background-color: #00C33B;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .hotel__category-text {
+    display: inline-block;
+  }
+}

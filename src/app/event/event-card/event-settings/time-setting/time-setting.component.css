@@ -1,0 +1,17 @@
+.time-setting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.time-setting__title {
+  font-size: 13px;
+  color: #3A3A45;
+  margin: 0 0 10px 0;
+}
+
+.time-setting__caption {
+  font-size: 11px;
+  color: var(--time-setting-color);
+  margin: 0 0 10px 0;
+}

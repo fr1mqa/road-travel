@@ -1,0 +1,4 @@
+<section class="add-event">
+  <menu-button [menuToggle]="menu" [config]="buttonConfig"></menu-button>
+  <dropdown-menu #menu (selectEvent)="addEvent.emit($event.type)" [items]="menuItems"></dropdown-menu>
+</section>

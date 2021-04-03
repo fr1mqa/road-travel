@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~normalize.css';
+
+:root {
+  --main-text-color: #00A1D5;
+  --text-color: #747E8A;
+  --white-bg-color: #FFFFFF;
+  --white-text-color: #FFFFFF;
+  --card-border-color: #DFE2E5;
+  --button-cancel-text-color: #FF6969;
+  --button-cancel-border-color: #FF6969;
+  --button-change-text-color: #00A1D5;
+  --button-change-border-color: #00A1D5;
+  --button-save-bg-color: #00A1D5;
+  --outline-menu-button-color: #00A1D5;
+  --hover-menu-button-bg: #F4FAFE;
+  --menu-icon-border-color: #A4ADB8;
+  --menu-open-icon-border-color: #00A1D5;
+  --cross-line-border-color: #A4ADB8;
+  --time-control-border-color: #DFE2E5;
+  --time-control-bg-color: #00A1D5;
+  --time-setting-color: #A4ADB8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+.button--change {
+  color: var(--main-text-color);
+  border-color: var(--button-change-border-color);
+  background-color: var(--white-bg-color);
+}
+
+.button--delete {
+  color: var(--button-cancel-text-color);
+  border-color: var(--button-cancel-border-color);
+  background-color: var(--white-bg-color);
+}
+
+.button--save {
+  color: var(--white-text-color);
+  font-weight: 600;
+  background-color: var(--button-save-bg-color);
+}
